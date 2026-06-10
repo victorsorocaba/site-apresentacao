@@ -1,5 +1,4 @@
 import { FadeIn } from './components/FadeIn';
-import { AnimatedHeading } from './components/AnimatedHeading';
 
 function App() {
   return (
@@ -37,11 +36,9 @@ function App() {
         <div className="lg:grid lg:grid-cols-2 lg:items-end w-full">
           {/* Left Column */}
           <div className="flex flex-col">
-            <AnimatedHeading
-              text={"O apartamento ficou pequeno\ndemais para os planos da sua família?"}
-              className="font-normal mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
-              style={{ letterSpacing: '-0.04em' }}
-            />
+            <h1 className="font-normal mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl" style={{ letterSpacing: '-0.04em' }}>
+              O apartamento ficou pequeno<br className="hidden md:block" /> demais para os planos da sua família?
+            </h1>
             
             <FadeIn delay={800} duration={1000} className="mb-5">
               <p className="text-base md:text-lg text-gray-300">
