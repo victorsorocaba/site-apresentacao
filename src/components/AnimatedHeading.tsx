@@ -27,16 +27,14 @@ export function AnimatedHeading({ text, className = '', style = {} }: AnimatedHe
           <div key={lineIndex} className="block">
             {line.split('').map((char, charIndex) => {
               const delay = initialDelay + (lineIndex * lineLength * charDelay) + (charIndex * charDelay);
-              
-              const isVisible = isMounted; // We will use CSS transition delay
 
               return (
                 <span
                   key={charIndex}
                   className="inline-block"
                   style={{
-                    opacity: isVisible ? 1 : 0,
-                    transform: isVisible ? 'translateX(0)' : 'translateX(-18px)',
+                    opacity: isMounted ? 1 : 0,
+                    transform: isMounted ? 'translateX(0)' : 'translateX(-18px)',
                     transition: `opacity ${transitionDuration}ms ease-out ${delay}ms, transform ${transitionDuration}ms ease-out ${delay}ms`,
                   }}
                 >
