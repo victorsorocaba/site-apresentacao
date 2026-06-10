@@ -38,7 +38,7 @@ function App() {
           {/* Left Column */}
           <div className="flex flex-col">
             <AnimatedHeading
-              text={"O apartamento ficou pequeno demais para os planos da sua família?"}
+              text={"O apartamento ficou\npequeno demais para os\nplanos da sua família?"}
               className="font-normal mb-4 text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
               style={{ letterSpacing: '-0.04em' }}
             />
