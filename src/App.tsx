@@ -11,7 +11,7 @@ function App() {
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover -z-10"
-        src="https://cdn.coverr.co/videos/coverr-nature-landscape-5208/1080p.mp4"
+        src="/background-nature.mp4"
       />
 
       {/* Navbar Container */}
